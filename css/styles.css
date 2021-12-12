@@ -1,0 +1,168 @@
+* {
+  border-width: 0px;
+  margin: 0;
+  padding: 0;
+  --frame-widthIn: 4px;
+  --frame-width: 7px;
+  --light-frame-secondColor: rgb(199, 199, 199);
+  --light-frame-firstColor: rgb(220, 220, 220);
+  --light-frameShadow-color: rgb(150, 150, 150);
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background: rgb(236, 175, 165);
+  background-image: url("../images/fabric-texture.png");
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.container {
+  background-color: rgb(236, 230, 230);
+  background-image: url("../images/fabric-texture.png");
+  border: 3px solid #1a2a33;
+  height: auto;
+  margin: 20px;
+  margin-bottom: 5px;
+  min-width: calc(100% - 40px);
+  position: relative;
+}
+
+header {
+  background-color: rgb(28, 153, 202);
+  background-image: url("../images/header.png");
+  border-bottom: 3px solid #1a2a33;
+  height: 100px;
+  width: 100%;
+}
+
+.title {
+  display: block;
+  height: 60px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.body {
+  background-image: url("../images/fabric-texture.png");
+  background-color: #ebe7e0;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: auto;
+  min-height: calc(100vh - 180px);
+  padding: 20px 0;
+  width: 100%;
+}
+
+.frame {
+  border-radius: 2px;
+  margin: 15px;
+  overflow: hidden;
+  padding: var(--frame-width);
+  box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+  -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+  -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+}
+
+.pizzas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pizza {
+  max-width: 35vw;
+}
+
+.paragraph {
+  font-size: 2rem;
+  margin: auto;
+  max-width: fit-content;
+  padding: 1.5rem;
+}
+
+.paragraph1 {
+  color: rgb(91, 118, 207);
+}
+
+.paragraph2 {
+  color: rgb(184, 79, 79);
+}
+
+.paragraph2 a {
+  color: #995e9e;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  margin: 20px auto;
+}
+.link {
+  border-radius: 5px;
+  margin: 20px;
+}
+.link a img {
+  height: 40px;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .pizza {
+    max-width: 70vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    height: 46px;
+    padding: 27px 0;
+  }
+  .link a img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .link a img {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    height: 34px;
+    padding: 33px 0;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .link a img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .title {
+    height: 28px;
+    padding: 36px 0;
+  }
+  .link a img {
+    height: 30px;
+  }
+}
