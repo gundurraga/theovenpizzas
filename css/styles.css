@@ -142,6 +142,9 @@ header {
   .link a img {
     height: 25px;
   }
+  .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
