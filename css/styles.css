@@ -54,7 +54,7 @@ header {
   background-color: #ebe7e0;
   align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   height: fit-content;
   margin: auto;
@@ -89,15 +89,30 @@ header {
   max-width: 35vw;
 }
 
+.pizza:hover {
+  filter: saturate(1.2);
+}
+
 .paragraph {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: auto;
   max-width: fit-content;
   padding: 1.5rem;
+  cursor: default;
 }
 
 .paragraph1 {
-  color: rgb(91, 118, 207);
+  color: rgb(66, 142, 165);
+}
+
+.paragraph1 a {
+  color: rgb(66, 142, 165);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.paragraph1 a:hover {
+  color: rgb(90, 180, 207);
 }
 
 .paragraph2 {
@@ -106,7 +121,12 @@ header {
 
 .paragraph2 a {
   color: #995e9e;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.paragraph2 a:hover {
+  color: #c53dd1;
 }
 
 .links {
@@ -120,6 +140,26 @@ header {
 .link a img {
   height: 40px;
   margin: 0;
+}
+
+.link:hover {
+  filter: saturate(1.5);
+}
+
+footer {
+  color: rgb(221, 169, 24);
+  cursor: default;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: rgb(221, 169, 24);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(235, 144, 39);
 }
 
 @media screen and (max-width: 900px) {
@@ -154,6 +194,7 @@ header {
   }
   .links {
     flex-direction: column;
+    align-items: center;
   }
   .link a img {
     height: 30px;
