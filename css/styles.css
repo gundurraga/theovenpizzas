@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: rgb(236, 175, 165);
+  background: rgba(83, 112, 99, 0.2);
   background-image: url("../images/fabric-texture.png");
   box-sizing: border-box;
   display: flex;
@@ -24,7 +24,6 @@ body {
 }
 
 .container {
-  background-color: rgb(236, 230, 230);
   background-image: url("../images/fabric-texture.png");
   border: 3px solid #1a2a33;
   height: auto;
@@ -51,7 +50,7 @@ header {
 
 .body {
   background-image: url("../images/fabric-texture.png");
-  background-color: #ebe7e0;
+  background-color: rgba(236, 174, 165, 0.25);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -94,11 +93,13 @@ header {
 }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: auto;
   max-width: fit-content;
-  padding: 1.5rem;
+  padding: 1rem;
   cursor: default;
+  background-color: rgba(223, 201, 37, 0.45);
+  border-radius: 5px;
 }
 
 .paragraph1 {
@@ -106,7 +107,7 @@ header {
 }
 
 .paragraph1 a {
-  color: rgb(66, 142, 165);
+  color: rgb(125, 66, 165);
   font-weight: bold;
   text-decoration: none;
 }
@@ -116,11 +117,12 @@ header {
 }
 
 .paragraph2 {
-  color: rgb(184, 79, 79);
+  color: #c27373;
+  margin-bottom: 5px;
 }
 
 .paragraph2 a {
-  color: #995e9e;
+  color: #5e689e;
   font-weight: bold;
   text-decoration: none;
 }
@@ -132,6 +134,8 @@ header {
 .links {
   display: flex;
   margin: 20px auto;
+  background-color: rgba(151, 211, 211, 0.45);
+  border-radius: 5px;
 }
 .link {
   border-radius: 5px;
@@ -151,6 +155,7 @@ footer {
   cursor: default;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 footer a {
