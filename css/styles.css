@@ -20,7 +20,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Inconsolata", Helvetica, sans-serif;
 }
 
 .container {
@@ -39,6 +39,10 @@ header {
   border-bottom: 3px solid #1a2a33;
   height: 100px;
   width: 100%;
+}
+
+header a .logo {
+  text-decoration: none;
 }
 
 .title {
@@ -117,12 +121,12 @@ header {
 }
 
 .paragraph2 {
-  color: #c27373;
+  color: #bb5656;
   margin-bottom: 5px;
 }
 
 .paragraph2 a {
-  color: #5e689e;
+  color: #49569c;
   font-weight: bold;
   text-decoration: none;
 }
@@ -188,7 +192,7 @@ footer a:hover {
     height: 25px;
   }
   .paragraph {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
