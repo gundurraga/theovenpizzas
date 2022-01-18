@@ -98,13 +98,14 @@ header a .logo {
 }
 
 .paragraph {
+  background-color: rgba(223, 201, 37, 0.45);
+  border-radius: 5px;
+  cursor: default;
   font-size: 1.3rem;
   margin: auto;
   max-width: fit-content;
   padding: 1rem;
-  cursor: default;
-  background-color: rgba(223, 201, 37, 0.45);
-  border-radius: 5px;
+  text-align: justify;
 }
 
 @keyframes hue {
