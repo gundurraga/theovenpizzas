@@ -46,6 +46,7 @@ header a .logo {
 }
 
 .title {
+  animation: 6s ease 0s infinite alternate none running hue;
   display: block;
   height: 60px;
   margin: auto;
@@ -106,6 +107,15 @@ header a .logo {
   border-radius: 5px;
 }
 
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-1turn);
+  }
+}
+
 .paragraph1 {
   color: rgb(66, 142, 165);
 }
@@ -136,6 +146,7 @@ header a .logo {
 }
 
 .links {
+  animation: 6s ease 0s infinite alternate none running hue;
   display: flex;
   margin: 20px auto;
   background-color: rgba(151, 211, 211, 0.45);
