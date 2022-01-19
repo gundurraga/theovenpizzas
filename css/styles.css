@@ -4,9 +4,9 @@
   padding: 0;
   --frame-widthIn: 4px;
   --frame-width: 7px;
-  --light-frame-secondColor: rgb(146, 73, 73);
-  --light-frame-firstColor: rgb(161, 78, 78);
-  --light-frameShadow-color: rgb(88, 41, 41);
+  --light-frame-secondColor: rgba(146, 73, 73, 0.5);
+  --light-frame-firstColor: rgb(161, 78, 78, 0.5);
+  --light-frameShadow-color: rgb(88, 41, 41, 0.5);
 }
 html,
 body {
@@ -75,6 +75,14 @@ header a .logo {
 }
 
 .frame {
+  background: conic-gradient(
+    from 90deg at 50% 51.52%,
+    #4589ff 0deg,
+    #ff7eb6 141.23deg,
+    #f1c21b 231.23deg,
+    #49cd7a 287.48deg,
+    #4589ff 360deg
+  );
   border-radius: 2px;
   margin: 15px;
   overflow: hidden;
