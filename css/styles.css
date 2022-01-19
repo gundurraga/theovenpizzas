@@ -4,14 +4,15 @@
   padding: 0;
   --frame-widthIn: 4px;
   --frame-width: 7px;
-  --light-frame-secondColor: rgb(199, 199, 199);
-  --light-frame-firstColor: rgb(220, 220, 220);
-  --light-frameShadow-color: rgb(150, 150, 150);
+  --light-frame-secondColor: rgb(146, 73, 73);
+  --light-frame-firstColor: rgb(161, 78, 78);
+  --light-frameShadow-color: rgb(88, 41, 41);
 }
 html,
 body {
   height: 100vh;
   width: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -34,8 +35,15 @@ body {
 }
 
 header {
-  background-color: rgb(28, 153, 202);
-  background-image: url("../images/header.jpg");
+  animation: 3s ease 0s infinite alternate none running hue;
+  background: conic-gradient(
+    from 90deg at 50% 51.52%,
+    #4589ff 0deg,
+    #ff7eb6 141.23deg,
+    #f1c21b 231.23deg,
+    #49cd7a 287.48deg,
+    #4589ff 360deg
+  );
   border-bottom: 3px solid #1a2a33;
   height: 100px;
   width: 100%;
@@ -105,9 +113,18 @@ header a .logo {
   margin: auto;
   max-width: fit-content;
   padding: 1rem;
+  line-height: 1.8rem;
   text-align: justify;
 }
 
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(-1turn);
+  }
+}
 @keyframes hue {
   0% {
     filter: hue-rotate(0deg);
@@ -122,13 +139,13 @@ header a .logo {
 }
 
 .paragraph1 a {
-  color: rgb(125, 66, 165);
+  color: rgb(165, 66, 66);
   font-weight: bold;
   text-decoration: none;
 }
 
 .paragraph1 a:hover {
-  color: rgb(90, 180, 207);
+  color: rgb(255, 0, 0);
 }
 
 .paragraph2 {
@@ -137,7 +154,7 @@ header a .logo {
 }
 
 .paragraph2 a {
-  color: #49569c;
+  animation: 2s ease 0s infinite alternate none running hue;
   font-weight: bold;
   text-decoration: none;
 }
@@ -148,16 +165,27 @@ header a .logo {
 
 .links {
   animation: 6s ease 0s infinite alternate none running hue;
+  background: conic-gradient(
+    from 90deg at 50% 51.52%,
+    #4589ff 0deg,
+    #ff7eb6 141.23deg,
+    #f1c21b 231.23deg,
+    #49cd7a 287.48deg,
+    #4589ff 360deg
+  );
+  border-radius: 5px;
   display: flex;
   margin: 20px auto;
-  background-color: rgba(151, 211, 211, 0.45);
-  border-radius: 5px;
 }
 .link {
   border-radius: 5px;
   margin: 20px;
 }
 .link a img {
+  -webkit-filter: drop-shadow(1px 1px 0 rgb(8, 44, 58))
+    drop-shadow(-1px -1px 0 rgb(8, 44, 58));
+  filter: drop-shadow(1px 1px 0 rgb(8, 44, 58))
+    drop-shadow(-1px -1px 0 rgb(8, 44, 58));
   height: 40px;
   margin: 0;
 }
@@ -167,7 +195,7 @@ header a .logo {
 }
 
 footer {
-  color: rgb(221, 169, 24);
+  color: rgb(199, 59, 54);
   cursor: default;
   font-weight: bold;
   font-size: 1.2rem;
@@ -175,12 +203,13 @@ footer {
 }
 
 footer a {
-  color: rgb(221, 169, 24);
+  color: rgb(163, 56, 53);
+  font-weight: bold;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: rgb(235, 144, 39);
+  color: rgb(255, 0, 0);
 }
 
 @media screen and (max-width: 900px) {
