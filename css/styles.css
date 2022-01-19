@@ -179,7 +179,7 @@ header a .logo {
 }
 .link {
   border-radius: 5px;
-  margin: 20px;
+  margin: 20px 40px;
 }
 .link a img {
   -webkit-filter: drop-shadow(1px 1px 0 rgb(8, 44, 58))
