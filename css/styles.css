@@ -71,7 +71,7 @@ header a .logo {
   height: fit-content;
   margin: auto;
   min-height: calc(100vh - 180px);
-  padding: 20px 0;
+  padding: 0 0 20px;
   width: 100%;
 }
 
@@ -107,7 +107,6 @@ header a .logo {
 
 .paragraph {
   background-color: rgba(223, 201, 37, 0.45);
-  border-radius: 5px;
   cursor: default;
   font-size: 1.3rem;
   margin: auto;
@@ -149,7 +148,7 @@ header a .logo {
 }
 
 .paragraph2 {
-  color: #bb5656;
+  color: #164181;
   margin-bottom: 5px;
 }
 
@@ -194,12 +193,12 @@ footer {
   color: rgb(199, 59, 54);
   cursor: default;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 10px;
 }
 
 footer a {
-  color: rgb(163, 56, 53);
+  color: rgb(199, 59, 54);
   font-weight: bold;
   text-decoration: none;
 }
