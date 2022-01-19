@@ -182,10 +182,6 @@ header a .logo {
   margin: 20px 40px;
 }
 .link a img {
-  -webkit-filter: drop-shadow(1px 1px 0 rgb(8, 44, 58))
-    drop-shadow(-1px -1px 0 rgb(8, 44, 58));
-  filter: drop-shadow(1px 1px 0 rgb(8, 44, 58))
-    drop-shadow(-1px -1px 0 rgb(8, 44, 58));
   height: 40px;
   margin: 0;
 }
