@@ -179,15 +179,22 @@ header a .logo {
   );
   border-radius: 5px;
   display: flex;
-  margin: 20px auto;
+  margin: 10px auto 20px;
 }
+
 .link {
   animation: 6s linear 0s infinite alternate none running hue;
   border-radius: 5px;
   margin: 20px 40px;
 }
+
 .link a img {
   height: 40px;
+  margin: 0;
+}
+
+.twitter a img {
+  height: 36px;
   margin: 0;
 }
 
