@@ -247,6 +247,10 @@ footer a:hover {
   font-weight: bold;
 }
 
+iframe {
+  border-top: 3px solid #1a2a33;
+}
+
 @media screen and (max-width: 900px) {
   .frame {
     width: 70vw;
