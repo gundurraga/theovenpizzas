@@ -15,6 +15,23 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(-1turn);
+  }
+}
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-1turn);
+  }
+}
+
 body {
   background: rgba(83, 112, 99, 0.2);
   background-image: url("../images/fabric-texture.png");
@@ -59,6 +76,11 @@ header a .logo {
   height: 60px;
   margin: auto;
   padding: 20px 0;
+}
+
+header a img:hover {
+  animation: none;
+  filter: invert();
 }
 
 .body {
@@ -109,7 +131,8 @@ header a .logo {
 }
 
 .pizza:hover {
-  filter: saturate(1.2);
+  animation: 7s linear 0s infinite alternate none running hue;
+  animation-timing-function: ease-in-out;
 }
 
 .paragraph {
@@ -123,23 +146,6 @@ header a .logo {
   text-align: justify;
 }
 
-@-webkit-keyframes hue {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  100% {
-    -webkit-filter: hue-rotate(-1turn);
-  }
-}
-@keyframes hue {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(-1turn);
-  }
-}
-
 .paragraph1 {
   color: rgb(66, 142, 165);
 }
@@ -151,7 +157,8 @@ header a .logo {
 }
 
 .paragraph1 a:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(201, 52, 52);
+  font-weight: bold;
 }
 
 .paragraph2 {
@@ -159,12 +166,13 @@ header a .logo {
 }
 
 .paragraph2 a {
-  font-weight: bold;
+  color: #164181;
   text-decoration: none;
 }
 
 .paragraph2 a:hover {
-  color: #c53dd1;
+  color: #000661;
+  font-weight: bold;
 }
 
 .links {
@@ -193,9 +201,8 @@ header a .logo {
   margin: 0;
 }
 
-.twitter a img {
-  height: 36px;
-  margin: 0;
+.link a img:hover {
+  filter: invert();
 }
 
 footer {
@@ -217,7 +224,8 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
