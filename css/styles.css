@@ -233,6 +233,9 @@ footer a:hover {
   .pizza {
     max-width: 70vw;
   }
+  .frame:last-of-type {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
