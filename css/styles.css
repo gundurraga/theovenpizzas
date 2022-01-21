@@ -118,6 +118,7 @@ header a img:hover {
   -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
     0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+  width: 35vw;
 }
 
 .pizzas {
@@ -128,9 +129,6 @@ header a img:hover {
 
 .pizza {
   max-width: 35vw;
-}
-
-.pizza:hover {
   animation: 7s linear 0s infinite alternate none running hue;
   animation-timing-function: ease-in-out;
 }
@@ -229,6 +227,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .frame {
+    width: 70vw;
+  }
   .pizza {
     max-width: 70vw;
   }
