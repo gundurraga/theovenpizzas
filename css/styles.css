@@ -130,7 +130,10 @@ header a img:hover {
 
 .pizza {
   max-width: 35vw;
-  animation: 7s linear 0s infinite alternate none running hue;
+}
+
+.pizza:hover {
+  animation: 6s linear 0s infinite alternate none running hue;
   animation-timing-function: ease-in-out;
 }
 
