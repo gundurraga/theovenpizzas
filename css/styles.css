@@ -119,6 +119,7 @@ header a img:hover {
     0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
   width: 35vw;
+  height: 35vw;
 }
 
 .pizzas {
@@ -229,6 +230,7 @@ footer a:hover {
 @media screen and (max-width: 900px) {
   .frame {
     width: 70vw;
+    height: 70vw;
   }
   .pizza {
     max-width: 70vw;
