@@ -147,6 +147,11 @@ header a img:hover {
 
 .paragraph1 {
   color: rgb(0, 145, 189);
+  transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  -ms-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
 }
 
 .paragraph1 a {
@@ -167,6 +172,11 @@ header a img:hover {
 .paragraph2 a {
   color: #164181;
   text-decoration: none;
+  transition: font-weight 0.1s linear;
+  -o-transition: font-weight 0.1s linear;
+  -ms-transition: font-weight 0.1s linear;
+  -moz-transition: font-weight 0.1s linear;
+  -webkit-transition: font-weight 0.1s linear;
 }
 
 .paragraph2 a:hover {
@@ -198,6 +208,11 @@ header a img:hover {
 .link a img {
   height: 40px;
   margin: 0;
+  transition: filter 0.2s linear;
+  -o-transition: filter 0.2s linear;
+  -ms-transition: filter 0.2s linear;
+  -moz-transition: filter 0.2s linear;
+  -webkit-transition: filter 0.2s linear;
 }
 
 .link a img:hover {
@@ -220,6 +235,11 @@ footer a {
   color: rgb(255, 217, 0);
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.2 linear;
+  -o-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -webkit-transition: color 0.2s linear;
 }
 
 footer a:hover {
