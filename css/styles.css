@@ -224,6 +224,7 @@ header a img:hover {
 
 footer {
   background-color: #003cff79;
+  border-top: 3px solid #1a2a33;
   color: rgb(255, 217, 0);
   cursor: default;
   display: block;
