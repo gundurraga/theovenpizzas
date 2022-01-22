@@ -42,5 +42,3 @@ function stat(stat) {
 }
 
 document.querySelector(".stats").innerHTML = `${stats.map(stat).join("")}`;
-
-console.log(stats);
