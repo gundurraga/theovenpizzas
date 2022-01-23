@@ -5,16 +5,23 @@
 }
 
 .stat {
+  border: solid 1px rgb(255, 255, 255);
+  box-sizing: border-box;
   display: flex;
   height: 100px;
   width: 75vw;
-  background-color: rgb(93, 135, 226);
+  background-color: rgba(255, 255, 255, 0.836);
   margin: 10px;
   text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 5px;
+}
+
+.stat:hover {
+  background-color: rgb(228, 226, 212);
+  border: solid 1px rgb(0, 145, 189);
 }
 
 .stat div {
@@ -25,14 +32,29 @@
 
 .figures {
   padding: 15px;
-  color: black;
   font-size: 2rem;
   font-weight: bold;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: 6s linear 0s infinite alternate none running hue;
+  background: conic-gradient(
+    from 90deg at 50% 51.52%,
+    #4589ff 0deg,
+    #ff7eb6 141.23deg,
+    #f1c21b 231.23deg,
+    #49cd7a 287.48deg,
+    #4589ff 360deg
+  );
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .text {
   padding: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .figures img {
