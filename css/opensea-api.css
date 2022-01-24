@@ -5,12 +5,12 @@
 }
 
 .stat {
-  border: solid 1px rgb(255, 255, 255);
+  border: solid 1px rgba(9, 27, 116, 0.836);
   box-sizing: border-box;
   display: flex;
   height: 100px;
   width: 75vw;
-  background-color: rgba(255, 255, 255, 0.836);
+  background-color: rgba(10, 18, 58, 0.836);
   margin: 10px;
   text-align: center;
   flex-direction: column;
@@ -20,14 +20,14 @@
 }
 
 .stat:hover {
-  background-color: rgb(228, 226, 212);
+  background-color: rgba(23, 34, 90, 0.836);
   border: solid 1px rgb(0, 145, 189);
 }
 
 .stat div {
   text-align: center;
   vertical-align: middle;
-  cursor: default;
+  cursor: pointer;
 }
 
 .figures {
@@ -50,11 +50,12 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  cursor: pointer;
 }
 
 .text {
   padding: 5px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .figures img {

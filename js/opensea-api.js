@@ -26,7 +26,9 @@ stats = [
 
 function stat(stat) {
   return `
-  <div class="stat" id="${stat[1]}">
+  <div onclick="window.open('https://opensea.io/collection/theovenpizzas?tab=activity','mywindow');" 
+  style="cursor: pointer;" class="stat" 
+  id="${stat[1]}">
     <div class="figures">
     ${stat[3] === "NUMBER" ? stat[2] : ""}
     ${
