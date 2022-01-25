@@ -31,9 +31,8 @@
 }
 
 .figures {
-  padding: 15px;
-  font-size: 2rem;
-  font-weight: bold;
+  align-items: center;
+  display: flex;
   padding: 15px;
   font-size: 2rem;
   font-weight: bold;
@@ -58,8 +57,9 @@
   color: rgb(255, 255, 255);
 }
 
-.figures img {
+.eth {
   height: 1.8rem;
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 500px) {

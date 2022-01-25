@@ -33,7 +33,7 @@ function stat(stat) {
     ${stat[3] === "NUMBER" ? stat[2] : ""}
     ${
       stat[3] === "ETH"
-        ? `<img src="images/eth.svg"> ${stat[2].toFixed(4)}`
+        ? `<img class="eth" src="images/eth.svg"> ${stat[2].toFixed(4)}`
         : ""
     }
     ${stat[3] === "PERCENTAGE" ? `${Math.round(stat[2] * 100)}%` : ""}
