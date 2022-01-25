@@ -17,6 +17,11 @@
   align-items: center;
   justify-content: space-evenly;
   border-radius: 5px;
+  transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
 }
 
 .stat:hover {
