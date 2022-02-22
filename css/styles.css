@@ -52,15 +52,8 @@ body {
 }
 
 header {
-  animation: 3s ease 0s infinite alternate none running hue;
-  background: conic-gradient(
-    from 90deg at 50% 51.52%,
-    #4589ff 0deg,
-    #ff7eb6 141.23deg,
-    #f1c21b 231.23deg,
-    #49cd7a 287.48deg,
-    #4589ff 360deg
-  );
+  background-image: url("../images/pizzavector.jpeg");
+  box-shadow: inset 0 0 0 1000px rgba(175, 27, 27, 0.7);
   border-bottom: 3px solid #1a2a33;
   height: 100px;
   width: 100%;
@@ -71,7 +64,6 @@ header a .logo {
 }
 
 .title {
-  animation: 6s linear 0s infinite alternate none running hue;
   display: block;
   height: 60px;
   margin: auto;
@@ -132,11 +124,6 @@ header a img:hover {
   max-width: 35vw;
 }
 
-.pizza:hover {
-  animation: 6s linear 0s infinite alternate none running hue;
-  animation-timing-function: ease-in-out;
-}
-
 .paragraph {
   background-color: rgba(223, 201, 37, 0.45);
   cursor: default;
@@ -188,7 +175,7 @@ header a img:hover {
 }
 
 .links {
-  animation: 3s ease 0s infinite alternate none running hue;
+  animation: 20s ease 0s infinite alternate none running hue;
   background: conic-gradient(
     from 90deg at 50% 51.52%,
     #4589ff 0deg,
@@ -203,7 +190,7 @@ header a img:hover {
 }
 
 .link {
-  animation: 6s linear 0s infinite alternate none running hue;
+  animation: 20s linear 0s infinite alternate none running hue;
   border-radius: 5px;
   margin: 20px 40px;
 }
@@ -223,7 +210,8 @@ header a img:hover {
 }
 
 footer {
-  background-color: #003cff79;
+  background-image: url("../images/pizzavector.jpeg");
+  box-shadow: inset 0 0 0 1000px rgba(98, 51, 184, 0.7);
   border-top: 3px solid #1a2a33;
   color: rgb(255, 217, 0);
   cursor: default;
