@@ -1,0 +1,64 @@
+.rarity {
+  padding: 10px;
+}
+.cell {
+  margin: 10px;
+  background-color: #1b9af3;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.rank_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rank_header > div {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: black;
+  color: white;
+}
+
+.cell img {
+  border-radius: 5px;
+}
+
+.edition {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.rarity {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: stretch;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.trait {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+.trait-name div {
+  margin: 2px 0;
+}
+
+.all_toppings {
+  max-width: 150px;
+}
