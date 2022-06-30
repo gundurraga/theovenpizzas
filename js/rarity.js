@@ -6,7 +6,7 @@ import data from "../TheOvenPizzasData.json" assert { type: "json" };
 
 const orderData = data.sort((a, b) => a.rarity_rank - b.rarity_rank);
 
-const data100 = orderData.slice(0, 100);
+const data100 = orderData.slice(100, 200);
 
 function pizzaTemplate(item) {
   return `
